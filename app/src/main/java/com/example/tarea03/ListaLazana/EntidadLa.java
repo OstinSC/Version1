@@ -1,6 +1,8 @@
 package com.example.tarea03.ListaLazana;
 
-public class EntidadLa {
+import java.io.Serializable;
+
+public class EntidadLa implements Serializable {
 
 
     private int imgFoto;

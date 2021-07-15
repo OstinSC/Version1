@@ -16,9 +16,10 @@ public class ActivityLasana extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lasana);
 
-        lvItems = (ListView) findViewById(R.id.lvItemslazana);
-        llenarItems();
+       lvItems = (ListView) findViewById(R.id.lvItemslazana);
+       llenarItems();
     }
+
     private void llenarItems(){
         arrayEntidadLa.add(new EntidadLa(R.drawable.lasagnabolognesa,"Lasaña Boloñesa","Esta Lasaña es con carne de perro y gato :v"));
 

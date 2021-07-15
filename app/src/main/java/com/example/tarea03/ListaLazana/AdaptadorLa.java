@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.tarea03.R;
 
 
-
 public class AdaptadorLa extends BaseAdapter {
     private ArrayList<EntidadLa> listEntidadLa;
     private Context context;

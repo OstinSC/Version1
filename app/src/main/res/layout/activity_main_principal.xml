@@ -30,7 +30,7 @@
         android:layout_marginTop="76dp"
         android:scaleType="centerCrop"
 
-        android:onClick="listalazaña"
+        android:onClick="listalasana"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
