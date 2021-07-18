@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tarea03.Usuario.ActivityRegistroUsuario;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
     public void enviar (View view ){
     Intent enviar = new Intent(this, MainActivityPrincipal.class);
     startActivity(enviar);
+
+    }
+
+
+    public void reguistrarusuario (View view ){
+        Intent reguistrarusuario = new Intent(this, ActivityRegistroUsuario.class);
+        startActivity(reguistrarusuario);
 
     }
 

@@ -5,24 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListaLazana.DetalleListaLasana">
+    tools:context=".ListaPizza.DetalleListaPizza">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tvTitulo1"
         android:textSize="50sp"
         android:textStyle="bold"
         android:gravity="center"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:id="@+id/imgFoto"/>
+        android:id="@+id/imgFoto1"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:id="@+id/tvDescripcion"/>
+        android:id="@+id/tvDescripcion1"/>
 
 </LinearLayout>

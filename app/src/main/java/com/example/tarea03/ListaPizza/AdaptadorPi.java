@@ -1,4 +1,4 @@
-package com.example.tarea03.ListaLazana;
+package com.example.tarea03.ListaPizza;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,28 +10,29 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 import com.example.tarea03.R;
 
-public class AdaptadorLa extends BaseAdapter {
-    private ArrayList<EntidadLa> listEntidadLa;
+import java.util.ArrayList;
+
+public class AdaptadorPi extends BaseAdapter {
+    private ArrayList<EntidadPi> listEntidadPi;
     private Context context;
     private LayoutInflater inflater;
 
-    public AdaptadorLa(Context context, ArrayList<EntidadLa> listEntidadLa) {
+    public AdaptadorPi(Context context, ArrayList<EntidadPi> listEntidadPi ){
         this.context = context;
-        this.listEntidadLa = listEntidadLa;
+        this.listEntidadPi = listEntidadPi;
+
     }
 
     @Override
     public int getCount() {
-        return listEntidadLa.size();
+        return listEntidadPi.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return listEntidadLa.get(position);
+        return listEntidadPi.get(position);
     }
 
     @Override
@@ -39,33 +40,30 @@ public class AdaptadorLa extends BaseAdapter {
         return 0;
     }
 
-
-
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // OBTENER EL OBJETO POR CADA ITEM A MOSTRAR
-        final EntidadLa entidadLa = (EntidadLa) getItem(position);
+        final EntidadPi entidadPi = (EntidadPi) getItem(position);
 
         // CREAMOS E INICIALIZAMOS LOS ELEMENTOS DEL ITEM DE LA LISTA
-        convertView = LayoutInflater.from(context).inflate(R.layout.itemlazana, null);
-        ImageView imgFoto = (ImageView) convertView.findViewById(R.id.imgFoto);
-        TextView tvTitulo = (TextView) convertView.findViewById(R.id.tvTitulo);
-        TextView tvContenido = (TextView) convertView.findViewById(R.id.tvContenido);
-        CheckBox CheckLasana = (CheckBox) convertView.findViewById(R.id.CheckLasana);
+        convertView = LayoutInflater.from(context).inflate(R.layout.itempizza, null);
+        ImageView imgFoto1 = (ImageView) convertView.findViewById(R.id.imgFoto1);
+        TextView tvTitulo1 = (TextView) convertView.findViewById(R.id.tvTitulo1);
+        TextView tvContenido1 = (TextView) convertView.findViewById(R.id.tvContenido1);
+        CheckBox CheckLasana = (CheckBox) convertView.findViewById(R.id.CheckPizza);
 
         // LLENAMOS LOS ELEMENTOS CON LOS VALORES DE CADA ITEM
-        imgFoto.setImageResource(entidadLa.getImgFoto());
-        tvTitulo.setText(entidadLa.getTitulo());
-        tvContenido.setText(entidadLa.getContenido());
+        imgFoto1.setImageResource(entidadPi.getImgFoto1());
+        tvTitulo1.setText(entidadPi.getTitulo1());
+        tvContenido1.setText(entidadPi.getContenido1());
 
 
 
         convertView.setOnClickListener(new View.OnClickListener()  {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, DetalleListaLasana.class);
-                i.putExtra("item",  entidadLa);
+                Intent i = new Intent(context, DetalleListaPizza.class);
+                i.putExtra("item",  entidadPi);
 
                 context.startActivity(i);
                 System.out.println("Click !!");

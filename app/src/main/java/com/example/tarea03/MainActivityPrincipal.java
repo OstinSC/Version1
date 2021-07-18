@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tarea03.ListaBebidas.ActivityBebidas;
 import com.example.tarea03.ListaLazana.ActivityLasana;
-import com.example.tarea03.ListaLazana.AdaptadorLa;
+
+import com.example.tarea03.ListaPizza.ActivityPizza;
 
 public class MainActivityPrincipal extends AppCompatActivity {
 
@@ -24,6 +26,8 @@ public class MainActivityPrincipal extends AppCompatActivity {
     public void listapizza (View view ){
         Intent listapizza = new Intent(this, ActivityPizza.class);
         startActivity(listapizza);}
+
+
 
     public void listabebidas (View view ){
         Intent listabebidas = new Intent(this, ActivityBebidas.class);

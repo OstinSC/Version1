@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tarea03">
-        <activity android:name=".ListaLazana.ActivityLasana"></activity>
+
+        <activity android:name=".ListaBebidas.DetalleListaBebidas" />
+        <activity android:name=".ListaBebidas.ActivityBebidas" />
         <activity android:name=".ListaLazana.DetalleListaLasana" />
-        <activity android:name=".ActivityBebidas" />
-        <activity android:name=".ActivityPizza" />
+        <activity android:name=".ListaPizza.DetalleListaPizza" />
+        <activity android:name=".ListaPizza.ActivityPizza" />
+        <activity android:name=".ListaLazana.ActivityLasana" />
+        <activity android:name=".Usuario.ActivityRegistroUsuario"></activity>
         <activity android:name=".MainActivityPrincipal" />
         <activity android:name=".MainActivity">
             <intent-filter>
