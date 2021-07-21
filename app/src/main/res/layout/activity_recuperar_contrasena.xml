@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Usuario.ActivityRegistroUsuario">
+    tools:context=".Usuario.ActivityRecuperarContrasena">
+
 
 
     <ImageView
@@ -42,7 +43,7 @@
 
 
     <EditText
-        android:id="@+id/cmail"
+        android:id="@+id/recuperar"
         android:layout_width="333dp"
         android:layout_height="48dp"
         android:layout_marginTop="264dp"
@@ -50,7 +51,7 @@
         android:drawableStart="@drawable/custom_email_icon"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Direccion"
+        android:hint="Recuperar Contraseña"
         android:maxLength="25"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
@@ -60,54 +61,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/cpassword"
-        android:layout_width="324dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="340dp"
-
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_lock_icon"
-
-        android:drawablePadding="12dp"
-
-        android:ems="10"
-        android:hint="Password"
-
-
-        android:inputType="textPassword"
-        android:maxLength="30"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btncrearusuario"
+        android:id="@+id/btnrecuperar"
         style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="219dp"
-        android:layout_height="69dp"
+        android:layout_width="248dp"
+        android:layout_height="74dp"
 
         android:layout_centerHorizontal="false"
         android:layout_centerVertical="false"
 
 
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
 
         android:drawablePadding="12dp"
 
         android:maxLength="15"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        android:text="Crear Usuario"
+        android:text="Restablecer Contraseña"
         android:textColor="@color/celeste"
 
         android:textSize="20dp"
@@ -115,6 +88,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintVertical_bias="0.648" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,4 +47,11 @@
     <string name="action_settings">Settings</string>
     <string name="Lista_usuarios">Lista de Usuarios</string>
     <string name="title_activity_list_usuario">ListUsuarioActivity</string>
+
+    <string name="invalid_email">Ingrese email valido</string>
+    <string name="invalid_user">Ingrese usuario valido</string>
+    <string name="invalid_phone">Ingrese telefono valido</string>
+    <string name="invalid_password">Ingrese password valido</string>
+
+
 </resources>
